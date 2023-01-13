@@ -18,7 +18,7 @@ api = tweepy.API(auth)
 parser = argparse.ArgumentParser()
 parser.add_argument("-s", "--schedule", help="Schedule a single tweet")
 parser.add_argument("-f", "--file", help="Schedule tweets from a CSV file")
-parser.add_argument("-t", "--time", required=True help="Scheduled time for tweets in 24-hour format (HH:MM)")
+parser.add_argument("-t", "--time", required=True, help="Scheduled time for tweets in 24-hour format (HH:MM)")
 args = parser.parse_args()
 
 # Schedule a single tweet
